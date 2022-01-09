@@ -3,7 +3,7 @@ echo -e "\033[32;5mStarting Attack Logs \033[0m"
 interface=eth0
 dumpdir=/root/tcpdump
 capturefile=/root/tcpdump/output.txt
- url='https://discordapp.com/api/webhooks/' ## Change this to your Webhook URL
+ url='https://discord.com/api/webhooks/929664184868818964/luXXyJhw5w_XEBc_KK9mjm4yQPU8g4zhWaelJg4hSvkC5C0M5GtMJ3RLKRZk6MxOimR1' ## Change this to your Webhook URL
 while /bin/true; do
   pkt_old=`grep $interface: /proc/net/dev | cut -d :  -f2 | awk '{ print $2 }'`
   sleep 1
